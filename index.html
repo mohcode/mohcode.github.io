@@ -15,7 +15,9 @@
     var shakeEvent = new Shake({threshold: 15});
     shakeEvent.start();
     window.addEventListener('shake', function(){
-        alert("Shaked");
+      var vid = document.getElementById('vid');
+    vid.play();
+}, false);
     }, false);
 
     //stop listening
